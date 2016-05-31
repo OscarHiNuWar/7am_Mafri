@@ -53,7 +53,8 @@
     </div>
 </header>
 
-    <div id="banner"  class="parallax-window" data-parallax="scroll" data-image-src="images/central.jpg">
+    <div id="banner"  class="parallax-window" >
+	<div class="img-fondo">
     	<div id="over-azul">
 			<div class="content-over">
 				<div class="banner-titulo"><h1>Qué es Mafri Electric</h1></div>
@@ -61,6 +62,7 @@
 				<div class="banner-boton">Leer más</div>
 			</div>	
 		</div>
+	</div>
     </div>
     <div id="content-fo-te">
     	<div id="content-fo">
