@@ -4,10 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 <link href="css/template.css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
  <script src="js/jquery-1.12.2.min.js"></script>
+ <script src="js/jquery.js"></script>
     <script src="js/parallax.js"></script>
 
 <title>MafriElectric - Equipos Eléctricos e Industriales</title>
+
+<style>
+
+		.item{ height: 120px; 
+				width: 285px;
+				background-color: transparent; 
+				
+			}
+
+		.slick-slide{
+					width:0.6%;
+					margin-right: 1px;
+					margin-left: 1px;
+					
+		}
+    </style>
+
 </head>
 
 <body>
@@ -33,7 +54,13 @@
 </header>
 
     <div id="banner"  class="parallax-window" data-parallax="scroll" data-image-src="images/central.jpg">
-    	<div id="over-azul"></div>
+    	<div id="over-azul">
+			<div class="content-over">
+				<div class="banner-titulo"><h1>Qué es Mafri Electric</h1></div>
+				<div class="banner-texto">Es una empresa dedicada a proveer productos de iluminación y control de la más alta calidad</div>
+				<div class="banner-boton">Leer más</div>
+			</div>	
+		</div>
     </div>
     <div id="content-fo-te">
     	<div id="content-fo">
@@ -100,7 +127,24 @@
             <div class="span-text">*No enviamos span</div>
 		</div>
     </div>
-    <div id="logos-content"></div>
+    <div id="logos-content">
+		<div id="carousel" class="carousel">
+		
+			<div class="item"> <img src="images/slide1.png"> </div>
+			<div class="item"> <img src="images/slide2.png"> </div>
+			<div class="item"> <img src="images/slide3.png"> </div>
+			<div class="item"> <img src="images/slide4.png"> </div>
+			<div class="item"> <img src="images/slide1.png"> </div>
+			<div class="item"> <img src="images/slide2.png"> </div>
+			<div class="item"> <img src="images/slide3.png"> </div>
+			<div class="item"> <img src="images/slide4.png"> </div>
+			<div class="item"> <img src="images/slide1.png"> </div>
+			<div class="item"> <img src="images/slide2.png"> </div>
+			<div class="item"> <img src="images/slide3.png"> </div>
+			<div class="item"> <img src="images/slide4.png"> </div>
+			
+		</div>
+	</div>
     <footer>
     	<div id="footer">
         	<div id="center-footer">
@@ -109,5 +153,25 @@
             </div>
         </div>
     </footer>
+
+<script type="text/javascript" src="js/slick.min.js"></script>	
+	
+<script type="text/javascript">
+   $('.carousel').slick({
+    arrows: false,
+    slidesToShow: 3,
+    autoplay: true,
+    autoplaySpeed:2500,
+    speed: 500,
+    variableWidth: true,
+    onAfterChange: function(){ 
+          var cat = ($('.carousel').slickCurrentSlide()) + 1;
+          $('.client-text > li').hide();
+          $('.client-text > li:nth-child('+ cat +')').show();
+    }
+});
+</script>  
+
+	
 </body>
 </html>

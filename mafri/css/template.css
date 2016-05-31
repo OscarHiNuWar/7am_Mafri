@@ -86,3 +86,9 @@ a{text-decoration: none; color: #6f6f6f; font-family: 'helveticabold'; -webkit-f
 .input-des .input{font-family: 'HelveticaLight'; font-size:19px; margin-left:18px; line-height:0; -webkit-font-smoothing: antialiased;}
 .boton-des{ float:right; width:83px; height:29px;background:#00b6f5; border-radius:20px; margin:4px 4px 0 0; text-align:center; padding-top:4px; color:#FFF; font-family: 'helveticabold'; -webkit-font-smoothing: antialiased;}
 .span-text{ margin-left: 38px; margin-top: 44px; font-family: 'HelveticaLight'; -webkit-font-smoothing: antialiased;}
+.carousel{padding-top:30px;width: 80%; margin: auto;}
+
+.content-over{ margin-top: 110px; margin-left: 140px;}
+.banner-titulo h1 {color: white; font-family: 'helveticabold'; font-size:41px; /*margin-top:34px;*/  -webkit-font-smoothing: antialiased; margin-bottom: 17px;}
+.banner-texto{font-family: 'HelveticaLight'; font-size:20px; color: white; width: 50%;}
+.banner-boton{background:#00b6f5; border-radius:20px; text-align:center; width: 140px; padding: 5px 30px 5px 30px; color: white; margin-top: 35px; font-family: 'HelveticaLight';}
