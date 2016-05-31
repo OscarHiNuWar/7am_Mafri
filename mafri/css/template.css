@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face{font-family: 'helveticabold';src: url('../fonts/Helvetica/Bold/helvetica-bold-webfont.eot');src: url('../fonts/Helvetica/Bold/helvetica-bold-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/Helvetica/Bold/helvetica-bold-webfont.woff2') format('woff2'),url('../fonts/Helvetica/Bold/helvetica-bold-webfont.woff') format('woff'),url('../fonts/Helvetica/Bold/helvetica-bold-webfont.ttf') format('truetype'), url('../fonts/Helvetica/Bold/helvetica-bold-webfont.svg#helveticabold') format('svg');font-weight: normal;font-style: normal;}
+/** HELVETICA LIGHT**/
+@font-face {
+		    font-family: 'HelveticaLight';
+   			src: url('../fonts/Helvetica/Light/helvetica-light-webfont.eot');
+    		src: url('../fonts/Helvetica/Light/helvetica-light-webfont.eot?#iefix') format('embedded-opentype'),
+        	url('../fonts/Helvetica/Light/helvetica-light-webfont.woff2') format('woff2'),
+         	url('../fonts/Helvetica/Light/helvetica-light-webfont.woff') format('woff'),
+         	url('../fonts/Helvetica/Light/helvetica-light-webfont.ttf') format('truetype'),
+         	url('../fonts/Helvetica/Light/helvetica-light-webfont.svg#webfontregular') format('svg');
+    		font-weight: normal;
+    		font-style: normal;
+
+		}
+
+
+/* //// */
+
+body{margin:0;padding:0;} , span{line-height:0; margin:0; padding:0; }
+#content-dir-top{width:100%;height:57px;border-bottom:1px solid #e9e9e9;}
+#dir-top{width:80%;margin:auto; text-align:right; padding-top:14px;font-family: 'helveticabold';font-size:16px; -webkit-font-smoothing: antialiased;}
+#content-menu{width:100%;height:140px;}
+#center-menu{width:80%;margin:auto;padding-top: 35px; overflow:hidden;}
+#banner{width:100%;height:504px;/*background:#333;*/}
+#content-fo-te{width:100%;height:457px;overflow:hidden; border-bottom:1px solid #e2e0e0;}
+#content-fo{width:68%;float:left;height:458px;}
+#content-te{width:32%;background:/*#999*/white;float:left;height:458px;}
+#content-bol-des{width:100%;height:280px;overflow:/*auto*/hidden; border-bottom:1px solid #e2e0e0;}
+#content-bol{width:68%;background:/*#CCC*/white;float:left;}	
+#content-des{width:31.9%;float:left;height:458px; border-left: 1px solid #e3e3e3;}
+#logos-content{width:100%;height:160px;border-bottom:1px solid #e9e9e9;}
+#footer{ width:100%; background:#efefef; height:102px;font-family: 'helveticabold';font-size:18px; -webkit-font-smoothing: antialiased;}
+#center-footer{width:80%; margin:auto; padding-top:38px;}
+#text-fo-1{float:left;}
+#text-fo-2{float:right;}
+#text-fo-2 span{font-family: 'HelveticaLight'; -webkit-font-smoothing: antialiased; }
+#logo{ background:url(../images/logo.jpg) no-repeat; width:283px;height:65px; float:left;}
+#nav-menu{float:right; width:63%;padding-top:16px;}
+#nav-menu ul, #nav-menu ul li{margin:0; padding:0;}
+#nav-menu ul li{float:left; padding:0 2.5% 0 2.5%;list-style:none;font-family:'helveticabold';font-size:19px;color:#4d4d4d; -webkit-font-smoothing: antialiased;}
+#nav-menu ul li:hover{color:#00b6f5;}
+.foto-gris-1{width:33.20%;float:left; height:237px; margin:0 1px 1px 0; overflow:hidden;}
+.foto-gris-2{width:24.88%;float:left; height:237px; margin:0 1px 1px 0; overflow:hidden;}
+.foto-gris-2 img, .foto-gris-1 img{ opacity:0.5; transition:0.5s;} 
+.foto-gris-2 img:hover, .foto-gris-1 img:hover{ opacity:1; transition:0.5s; cursor:pointer;} 
+
+/*.img-fondo{background: url("../images/central.jpg"); width: 100%; height: 100%;}*/
+.texto-banner{margin: auto;}
+.informacion-uno{width: 100%; /*background: red;*/ float: left;}
+.contenedor-interno{width: 85%; margin: auto; font-family: 'HelveticaLight'; -webkit-font-smoothing: antialiased;}
+h1{color: #00b6f5; font-family: 'helveticabold'; font-size:27px; margin-top:34px; -webkit-font-smoothing: antialiased;}
+.h1-home{font-size:20px; font-family: 'helveticabold'; -webkit-font-smoothing: antialiased;}
+a{text-decoration: none; color: #6f6f6f; font-family: 'helveticabold'; -webkit-font-smoothing: antialiased;}
+.informacion-dos{width: 50%; /*background: blue;*/ float: left;  font-family: 'helveticabold'; padding-top:20px; -webkit-font-smoothing: antialiased;}
+.alineo{margin: auto; width: 86%; font-family: 'HelveticaLight'; -webkit-font-smoothing: antialiased;}
+.fonts{font-family: 'helveticabold'; font-size: 20px; color:#4d4d4d; -webkit-font-smoothing: antialiased;}
+#over-azul{position:absolute; width:100%; height:504px; background:rgba(0, 174, 239, 0.5);}
+.content-formulario{margin: auto; text-align: center;}
+.cont-mailboton{    border: 1px solid #e3e3e3;
+    border-radius: 20px;
+    width: 70%;
+    padding: 2px 10px 2px 10px;
+    background: white;
+    padding-left: 25px;
+	margin: auto;
+	margin-top: 20px;}
+	input{border:0;}
+	#mail{margin: auto;}
+.boton-envio{
+	font-family: 'helveticabold'; -webkit-font-smoothing: antialiased;
+	color: white;
+	border: 0;
+    background-color: #00b6f5;
+    padding: 10px 15px 10px 15px;
+    border-radius: 30px;}
+.font19{font-size:19px; font-family: 'HelveticaLight'; margin:0; -webkit-font-smoothing: antialiased;}
+.titulo-form{color: #00b6f5; font-family: 'helveticabold'; font-size:27px; margin-top:34px; }
+#no-spam{margin 3%;}
+
+.des-titulo{text-align:center; font-size:24px; font-family: 'helveticabold'; color: #00b6f5; padding-top:40px; -webkit-font-smoothing: antialiased;}
+.des-texto{font-size:19px; font-family: 'HelveticaLight'; text-align:center; -webkit-font-smoothing: antialiased;}
+.content-form-des{ width:75%; border:1px solid #e2e0e0; border-radius:20px; height:41px; margin:auto; margin-top:28px;}
+.input-des{ float:left;-webkit-font-smoothing: antialiased;}
+.input-des .input{font-family: 'HelveticaLight'; font-size:19px; margin-left:18px; line-height:0; -webkit-font-smoothing: antialiased;}
+.boton-des{ float:right; width:83px; height:29px;background:#00b6f5; border-radius:20px; margin:4px 4px 0 0; text-align:center; padding-top:4px; color:#FFF; font-family: 'helveticabold'; -webkit-font-smoothing: antialiased;}
+.span-text{ margin-left: 38px; margin-top: 44px; font-family: 'HelveticaLight'; -webkit-font-smoothing: antialiased;}
