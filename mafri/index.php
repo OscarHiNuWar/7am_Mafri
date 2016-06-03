@@ -1,72 +1,21 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<link href="css/template.css" rel="stylesheet"/>
-<link rel="stylesheet" type="text/css" href="css/slick.css"/>
-<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
-
- <script src="js/jquery-1.12.2.min.js"></script>
- <script src="js/jquery.js"></script>
-    <script src="js/parallax.js"></script>
-
-<title>MafriElectric - Equipos Eléctricos e Industriales</title>
-
-<style>
-
-		.item{ height: 120px; 
-				width: 285px;
-				background-color: transparent; 
-				
-			}
-
-		.slick-slide{
-					width:0.6%;
-					margin-right: 1px;
-					margin-left: 1px;
-					
-		}
-    </style>
-
-</head>
-
-<body>
-<header>
-	<div id="content-dir-top">
-    	<div id="dir-top">Materiales Eléctricos e Industriales, Llámanos: 809-583-4255</div>
-    </div>
-    <div id="content-menu">
-    	<div id="center-menu">
-        	<nav>
-        		<div id="logo"></div>
-            	<div id="nav-menu">
-                	<ul>
-                    	<a href="#"><li>Productos</li></a>
-                        <a href="#"><li>Proyectos</li></a>
-                        <a href="#"><li>Descargas</li></a>
-                        <a href="#"><li>La empresa</li></a>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </div>
-</header>
+<?php include("include/topmenu.php");?>
 
     <div id="banner"  class="parallax-window" >
 	<div class="img-fondo">
     	<div id="over-azul">
 			<div class="content-over">
 				<div class="banner-titulo"><h1>Qué es Mafri Electric</h1></div>
-				<div class="banner-texto">Es una empresa dedicada a proveer productos de iluminación y control de la más alta calidad</div>
-				<div class="banner-boton">Leer más</div>
+				<div class="banner-texto">Es una empresa de ingeniería aplicada, destinada a ofrecer soluciones integradas en el sector de zonas francas</div>
+				<a href="laempresa.php"><div class="banner-boton">Leer más</div></a>
 			</div>	
 		</div>
 	</div>
     </div>
     <div id="content-fo-te">
     	<div id="content-fo">
-        	<div class="foto-gris-1"><img src="images/01.jpg"></div>
+		<!--<a href="images/01.jpg" data-lightbox="album">-->
+        	 <div class="foto-gris-1"><img src="images/01.jpg"><span class="prueba">Algo sdafasdfsd</span></div>
             <div class="foto-gris-1"><img src="images/02.jpg"></div>
             <div class="foto-gris-1" style="margin-right:0;"> <img src="images/03.jpg"> </div>
             <div class="foto-gris-2">  <img src="images/04.jpg"> </div>
@@ -81,7 +30,7 @@
 					<h1>Qué es Mafri Electric?</h1>
 					<p>nivel nacional e internacional. Nuestra organización 
 					siempre busca de forma profesional, superar las 
-					expectativas... <a href="#">Leer Más</a></p>
+					expectativas... <a href="laempresa.php">Leer Más</a></p>
 				</div>
 			</div>
 			<div class="informacion-uno">
@@ -89,7 +38,7 @@
 						<h1 class="h1-home">Es una empresa dedicada a proveer productos de iluminación y control de la más alta calidad</h1>
 						<p>nivel nacional e internacional. Nuestra organización 
 						siempre busca de forma profesional, superar las 
-						expectativas... <a href="#">Leer Más</a></p>
+						expectativas... <a href="laempresa.php">Leer Más</a></p>
 					</div>
 			</div>
 		</div>
@@ -99,21 +48,20 @@
     	<div id="content-bol">
 			<div class="informacion-dos">
 					<div class="alineo">
-						<div class="fonts"><p>Es una empresa dedicada a proveer productos 
-						de iluminación y control de la más alta calidad</p></div>
-						<p>nivel nacional e internacional. Nuestra organización 
-							siempre busca de forma profesional, superar las 
-							expectativas... <a href="#">Leer Más</a></p>
+						<div class="fonts"><p>Carta del Presidente</p></div>
+						<p>Mafri tiene el firme objetivo de garantizar
+						una experiencia única en la adquisición 
+						de materiales eléctricos, componentes de control
+						especializados e iluminación, además... <a href="carta.php">Leer Más</a></p>
 					</div>
 			</div>
 			
 			<div class="informacion-dos">
 					<div class="alineo">
-						<div class="fonts"><p>es una empresa dedicada a proveer productos
-						de iluminación y control de la más alta calidad</p></div>
-						<p>nivel nacional e internacional. Nuestra organización 
-							siempre busca de forma profesional, superar las 
-							expectativas... <a href="#">Leer Más</a></p>
+						<div class="fonts"><p>Nuestra Misión y Visión</p></div>
+						<p>Ser la empresa líder en la comercialización y
+						el suministro de luminarias, equipos y controles
+						eléctricos de la mejor calidad... <a href="mision.php">Leer Más</a></p>
 					</div>
 			</div>
 		</div>
@@ -121,31 +69,16 @@
 			<div class="des-titulo">Boletín Informativo</div>
             <div class="des-texto">Reciba nuestras ofertas en su correo</div>
             <div class="content-form-des">
-            	<form action="" method="post">
-                	<div class="input-des"><input name="" type="text" class="input" placeholder="Su e-mail" /></div>
-                    <div class="boton-des">Enviar</div>
+            	<form action="mail.php" method="post" id="enviar">
+                	<div class="input-des"><input name="email" type="email" class="input" placeholder="Su e-mail"  required/></div>
+                   <input type="submit" id="enviar-mail" class="boton-des" value="Enviar">
                 </form>
             </div>
             <div class="span-text">*No enviamos span</div>
 		</div>
     </div>
-    <div id="logos-content">
-		<div id="carousel" class="carousel">
-		
-			<div class="item"> <img src="images/slide1.png"> </div>
-			<div class="item"> <img src="images/slide2.png"> </div>
-			<div class="item"> <img src="images/slide3.png"> </div>
-			<div class="item"> <img src="images/slide4.png"> </div>
-			<div class="item"> <img src="images/slide1.png"> </div>
-			<div class="item"> <img src="images/slide2.png"> </div>
-			<div class="item"> <img src="images/slide3.png"> </div>
-			<div class="item"> <img src="images/slide4.png"> </div>
-			<div class="item"> <img src="images/slide1.png"> </div>
-			<div class="item"> <img src="images/slide2.png"> </div>
-			<div class="item"> <img src="images/slide3.png"> </div>
-			<div class="item"> <img src="images/slide4.png"> </div>
-			
-		</div>
+    
+		<?php include("include/slide.php");?>
 	</div>
     <footer>
     	<div id="footer">
@@ -174,6 +107,23 @@
 });
 </script>  
 
-	
+<script type="text/javascript">
+	$(document).ready(function() {
+        
+        $("#enviar-mail").click(function() {
+            $.post($("#enviar").attr("action"), $("#enviar").serialize(),
+              function(data) {
+    			//$(".enviado").fadeIn(200).delay(10000).fadeOut(200);;
+                //$(".hola").append(data);
+				$(".datos-enviar").empty();
+				$(".datos-enviar").append(data);
+             });
+    		 
+          });
+	});	  
+</script>
+
+ <script src="js/lightbox.js"></script>
+ 
 </body>
 </html>
